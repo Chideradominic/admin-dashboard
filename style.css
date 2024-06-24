@@ -2,23 +2,176 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 svg{
-  width: 10px;
+  width: 1.5rem;
+  align-items: center;
+  
 }
 .container{
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 0.5fr 3fr;
+  grid-template-rows: 1fr;
+ 
 }
 .sidebar{
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row: span 2;
+  padding: 30px;
+  background-color: #1992d4;
   
 }
 .header{
-  grid-column: 2/4;
+  grid-column: 2;
+ 
+}
+
+.icons {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  color: white;
+  align-items: center;
+ 
+}
+.profile{
+  align-items: center;
+}
+
+.header-one{
+  display: flex;
+ justify-content: space-between;
+ padding: 30px;
+}
+.header-two{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.buttons-header{
+  display: flex;
+  gap: 10px;
+ 
+  }
+  button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: #1992d4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+.passport-icon{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-content: baseline;
+}
+a {
+  text-decoration: none;
+  padding: none;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+.icons svg{
+ fill: white;
+}
+.logo h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.history {
+  margin-bottom: 60px;
+}
+.passport-icon-bigger{
+  font-weight: bold;
+}
+.passport-icon-bigger svg{
+  width: 50px;
+}
+input{
+  border: none;
+  background-color: #e2e8f0;
+  border-radius: 50px;
+  width: 20lh;
+  padding-left: 20px;
+
+
+}
+input:focus{
+  outline:5px #1992d4 solid;
+  box-shadow: 8px 6px 20px rgba(0, 0, 0, 0.5);
 }
 .main-body{
+  display: grid;
+  grid-template-columns:2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  background-color: #e2e8f0;
+  padding: 30px;
+}
+.your-projects{
+  grid-row: span 2;
+}
+article{
+  width:550px;
+  background-color: white;
+  padding: 40px;
+  font-size: 50px;
+  border-radius: 10px;
+
+}
+.article{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  
+}
+.article * {
+  font-size: 0.9em;
+}
+
+#content *{
+  font-size: 0.8em;
+
+  
+  
+ 
+ 
+}
+.announ{
+  padding: 10px 40px;
+  border-bottom: 1px black solid;
+  
+}
+.updated-privacy{
+  border: none;
+}
+#content{
+  background-color: white;
+  border-radius: 10px;
+  width: 350px;
+}
+.trending *{
+  font-size: 0.9em;
+}
+.trending-container{
+  background-color: white;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+ .item {
+  display: flex;
+  gap: 10px;
+  padding: 10px 5px;
+}
+.item svg{
+  width: 40px;
 }
